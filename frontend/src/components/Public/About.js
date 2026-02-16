@@ -26,11 +26,7 @@ const About = () => {
                         to provide our community with the freshest, highest quality agricultural products 
                         while promoting sustainable farming practices.
                     </p>
-                    <p>
-                        What started with just 2 acres of land has now grown into a thriving farm that 
-                        produces a wide variety of vegetables, fruits, and grains. We've also expanded 
-                        to include livestock, providing our customers with free-range eggs and poultry.
-                    </p>
+                   <p>What started with just 2 acres of land has now grown into a thriving farm that produces a wide variety of vegetables, fruits, and grains. We&apos;ve also expanded to include livestock, providing our customers with free-range eggs and poultry.</p>
                     <p>
                         Today, we supply to local restaurants, grocery stores, and individual customers 
                         who appreciate the difference that farm-fresh produce makes in their cooking.
@@ -43,9 +39,7 @@ const About = () => {
                         land and our community. We believe that healthy soil produces healthy food, 
                         and healthy food creates healthy communities.
                     </p>
-                    <p>
-                        We're committed to:
-                    </p>
+                    <p>We&apos;re committed to:</p>
                     <ul>
                         <li>Sustainable farming practices that protect our environment</li>
                         <li>Providing fair wages and safe working conditions for our workers</li>

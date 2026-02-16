@@ -314,8 +314,8 @@ const ProductList = ({ onStatsUpdate }) => {
                     <Modal.Title>Confirm Delete</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    Are you sure you want to delete "{productToDelete?.name}"? This action cannot be undone.
-                </Modal.Body>
+    Are you sure you want to delete &quot;{productToDelete?.name}&quot;? This action cannot be undone.
+</Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={() => setShowDeleteModal(false)}>
                         Cancel

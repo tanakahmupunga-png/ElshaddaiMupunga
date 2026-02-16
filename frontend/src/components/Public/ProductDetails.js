@@ -41,7 +41,7 @@ const ProductDetails = () => {
         return (
             <Container className="text-center py-5">
                 <h2>Product Not Found</h2>
-                <p>The product you're looking for doesn't exist or is no longer available.</p>
+                <p>The product you&apos;re looking for doesn&apos;t exist or is no longer available.</p>
                 <Link to="/products" className="btn btn-success">Browse Products</Link>
             </Container>
         );

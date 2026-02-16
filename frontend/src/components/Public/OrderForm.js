@@ -91,8 +91,8 @@ const OrderForm = () => {
                             
                             {success && (
                                 <Alert variant="success">
-                                    Order submitted successfully! We'll contact you shortly to confirm.
-                                </Alert>
+    Order submitted successfully! We&apos;ll contact you shortly to confirm.
+</Alert>
                             )}
                             
                             {error && (
