@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 // Import images from src/images
-import elshaddaiImage from '../../images/Elshaddai.jpeg';
+import elshaddaiImage from '../../../images/Elshaddai.jpeg';
 import frankImage from '../../images/frank.jpeg';
 
 const About = () => {
