@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 // Import images from src/images
-import elshaddaiImage from '../../../images/Elshaddai.jpeg';
-import frankImage from '../../images/frank.jpeg';
+//import elshaddaiImage from '../../images/Elshaddai.jpeg';
+//import frankImage from '../../images/frank.jpeg';
 
 const About = () => {
     return (
@@ -17,7 +17,7 @@ const About = () => {
                         {/* Team Member 1 - Elshaddai Mupunga */}
                         <Col md={6} className="text-center mb-4">
                             <Image
-                                src={elshaddaiImage}  // Use imported variable
+                                src="/images/Elshaddai.jpeg" alt="Elshaddai"  // Use imported variable
                                 roundedCircle
                                 width={150}
                                 height={150}
@@ -32,7 +32,7 @@ const About = () => {
                         {/* Team Member 2 - Frank */}
                         <Col md={6} className="text-center mb-4">
                             <Image 
-                                src={frankImage}  // Use imported variable
+                               src="/images/frank.jpeg" alt="Elshaddai"  // Use imported variable
                                 roundedCircle 
                                 width={150} 
                                 height={150}
