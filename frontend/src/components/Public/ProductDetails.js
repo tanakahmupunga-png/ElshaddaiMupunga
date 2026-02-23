@@ -70,7 +70,9 @@ const ProductDetails = () => {
                         )}
                     </div>
 
-                    <h2 className="text-success mb-3">KSh {product.price}/{product.quantity.split(' ')[1]}</h2>
+                    <h2 className="text-success mb-3">
+                         Dollars ($) {product.price}/{product.quantity?.split(' ')[1] || 'unit'}
+                    </h2>
                     
                     <p className="mb-4">{product.description}</p>
                     
@@ -81,7 +83,7 @@ const ProductDetails = () => {
                         </Col>
                         <Col sm={6}>
                             <strong>Harvest Date:</strong>
-                            <p>{new Date(product.harvest_date).toLocaleDateString()}</p>
+                            <p>{product.harvest_date ? new Date(product.harvest_date).toLocaleDateString() : 'Not specified'}</p>
                         </Col>
                     </Row>
 
@@ -112,9 +114,9 @@ const ProductDetails = () => {
                 <Col>
                     <h3>Product Information</h3>
                     <p>
-                        Our {product.name} are grown with care using sustainable farming practices. 
+                        {`Our ${product.name} are grown with care using sustainable farming practices.`}
                         {product.is_organic ? ' They are certified organic and free from harmful pesticides.' : ''}
-                        Harvested on {new Date(product.harvest_date).toLocaleDateString()} to ensure maximum freshness.
+                        {product.harvest_date ? ` Harvested on ${new Date(product.harvest_date).toLocaleDateString()} to ensure maximum freshness.` : ''}
                     </p>
                 </Col>
             </Row>

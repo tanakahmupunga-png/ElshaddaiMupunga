@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Container, Form, Button, Card, Alert, Row, Col } from 'react-bootstrap';  // Add Row and Col
+import { Container, Form, Button, Card, Alert, Row, Col } from 'react-bootstrap';
 import api from '../../services/api';
 
 const OrderForm = () => {
@@ -91,8 +91,8 @@ const OrderForm = () => {
                             
                             {success && (
                                 <Alert variant="success">
-    Order submitted successfully! We&apos;ll contact you shortly to confirm.
-</Alert>
+                                    Order submitted successfully! We&apos;ll contact you shortly to confirm.
+                                </Alert>
                             )}
                             
                             {error && (
@@ -148,7 +148,7 @@ const OrderForm = () => {
                                         <option value="">Choose a product...</option>
                                         {products.map(product => (
                                             <option key={product.id} value={product.id}>
-                                                {product.name} - KSh {product.price}/{product.quantity.split(' ')[1]}
+                                                {product.name} - Dollars ($) {product.price}/{product.quantity?.split(' ')[1] || 'unit'}
                                             </option>
                                         ))}
                                     </Form.Select>
@@ -164,6 +164,9 @@ const OrderForm = () => {
                                         required
                                         placeholder="e.g., 5 kg, 2 bunches, 10 pcs"
                                     />
+                                    <Form.Text className="text-muted">
+                                        Specify the quantity you want to order (e.g., 5 kg, 2 bunches, 10 pcs)
+                                    </Form.Text>
                                 </Form.Group>
 
                                 <Form.Group className="mb-3">
@@ -174,7 +177,7 @@ const OrderForm = () => {
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
-                                        placeholder="Any special instructions or requests?"
+                                        placeholder="Any special instructions or requests? (optional)"
                                     />
                                 </Form.Group>
 

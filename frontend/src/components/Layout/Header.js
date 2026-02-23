@@ -18,7 +18,7 @@ const Header = () => {
             <Container>
                 <Navbar.Brand as={Link} to="/" className="logo">
                     <FaLeaf className="me-2" />
-                    AgroFarm Shop
+                    NDODAHONDO COMPLEX
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Card, Nav, Tab } from 'react-bootstrap';  // Make sure all are imported
+import { Container, Row, Col, Card, Nav, Tab,  } from 'react-bootstrap';  // Make sure all are imported
 import { useAuth } from '../../context/AuthContext';
 import ProductList from './ProductList';
 import AddProduct from './AddProduct';

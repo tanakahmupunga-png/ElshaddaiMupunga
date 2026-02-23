@@ -126,7 +126,7 @@ const ProductList = ({ onStatsUpdate }) => {
                             </td>
                             <td>{product.name}</td>
                             <td>{product.category}</td>
-                            <td>KSh {product.price}</td>
+                            <td> Dollars ($){product.price}</td>
                             <td>{product.quantity}</td>
                             <td>
                                 <Badge bg={product.is_available ? 'success' : 'secondary'}>
@@ -207,7 +207,7 @@ const ProductList = ({ onStatsUpdate }) => {
                         </Form.Group>
 
                         <Form.Group className="mb-3">
-                            <Form.Label>Price (KSh)</Form.Label>
+                            <Form.Label>Price ( Dollars ($))</Form.Label>
                             <Form.Control
                                 type="number"
                                 step="0.01"
@@ -308,14 +308,14 @@ const ProductList = ({ onStatsUpdate }) => {
                 </Modal.Body>
             </Modal>
 
-            {/* Delete Confirmation Modal */}
+            {/* Delete Confirmation Modal - FIXED UNESCAPED QUOTES */}
             <Modal show={showDeleteModal} onHide={() => setShowDeleteModal(false)}>
                 <Modal.Header closeButton>
                     <Modal.Title>Confirm Delete</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-    Are you sure you want to delete &quot;{productToDelete?.name}&quot;? This action cannot be undone.
-</Modal.Body>
+                    {`Are you sure you want to delete "${productToDelete?.name || ''}"? This action cannot be undone.`}
+                </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={() => setShowDeleteModal(false)}>
                         Cancel

@@ -8,7 +8,7 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col md={4}>
-                        <h3>AgroFarm Shop</h3>
+                        <h3>NDODAHONDO COMPLEX</h3>
                         <p>Your trusted source for fresh, organic agricultural products straight from our farm to your table.</p>
                     </Col>
                     <Col md={4}>
@@ -23,9 +23,10 @@ const Footer = () => {
                     </Col>
                     <Col md={4}>
                         <h3>Contact Info</h3>
-                        <p>Phone: +123 456 7890</p>
-                        <p>Email: info@agrofarm.com</p>
-                        <p>Address: 123 Farm Road, Agricultural District</p>
+                        <p>Phone: +263 787886092</p>
+                        <p>Email: elshaddaimupunga25@gmail.com</p>
+                        <p>Address: 252 wray avenue 
+private Bag 968, Bindura </p>
                         <div className="social-links">
                             <a href="#" className="me-3"><FaFacebook size={24} /></a>
                             <a href="#" className="me-3"><FaTwitter size={24} /></a>
@@ -36,7 +37,7 @@ const Footer = () => {
                 </Row>
                 <hr className="mt-4" />
                 <div className="text-center mt-3">
-                    <p>&copy; {new Date().getFullYear()} AgroFarm Shop. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} NDODAHONDO COMPLEX. All rights reserved.</p>
                 </div>
             </Container>
         </footer>

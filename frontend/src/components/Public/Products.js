@@ -112,7 +112,7 @@ const Products = () => {
                                 <Card.Body>
                                     <Card.Title>{product.name}</Card.Title>
                                     <Card.Text className="product-price">
-                                        KSh {product.price}/{product.quantity.split(' ')[1]}
+                                        Dollars ($): {product.price}/{product.quantity.split(' ')[1]}
                                     </Card.Text>
                                     <Card.Text className="text-muted small">
                                         {product.description.substring(0, 60)}...

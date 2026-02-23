@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Card,  Spinner } from 'react-bootstrap';
+import { Container, Row, Col, Card, Spinner } from 'react-bootstrap';  // Removed 'Button' from imports
 import api from '../../services/api';
 
 const Home = () => {
@@ -58,10 +58,10 @@ const Home = () => {
                                 <Card.Body>
                                     <Card.Title>{product.name}</Card.Title>
                                     <Card.Text className="product-price">
-                                        KSh {product.price}/{product.quantity.split(' ')[1]}
+                                      Dollars ($): {product.price}/{product.quantity?.split(' ')[1] || 'unit'}
                                     </Card.Text>
                                     <Card.Text className="text-muted small">
-                                        {product.description.substring(0, 60)}...
+                                        {product.description?.substring(0, 60)}...
                                     </Card.Text>
                                     <div className="d-flex justify-content-between align-items-center">
                                         <span className={`product-status ${product.is_available ? 'status-available' : 'status-out-of-stock'}`}>

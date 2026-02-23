@@ -15,28 +15,50 @@ const Contact = () => {
                             
                             <div className="mb-4">
                                 <h5><FaPhone className="text-success me-2" /> Phone</h5>
-                                <p className="ms-4">+123 456 7890</p>
+                                <p className="ms-4">+263 787886092</p>
                                 <p className="ms-4 text-muted">Monday - Saturday: 8:00 AM - 6:00 PM</p>
                             </div>
                             
                             <div className="mb-4">
-                                <h5><FaEnvelope className="text-success me-2" /> Email</h5>
-                                <p className="ms-4">info@agrofarm.com</p>
-                                <p className="ms-4">orders@agrofarm.com</p>
-                            </div>
+    <h5>
+        <FaEnvelope className="text-success me-2" /> Email
+    </h5>
+
+    <p className="ms-4">
+        <a 
+            href="mailto:elshaddaimupunga25@gmail.com"
+            className="text-decoration-none"
+        >
+            elshaddaimupunga25@gmail.com
+        </a>
+    </p>
+
+   
+</div>
+
                             
                             <div className="mb-4">
                                 <h5><FaMapMarkerAlt className="text-success me-2" /> Location</h5>
-                                <p className="ms-4">123 Farm Road</p>
-                                <p className="ms-4">Agricultural District, 00100</p>
+
+    <p className="ms-4 fw-bold">NDODAHONDO COMPLEX</p>
+
+    <p className="ms-4 mb-1">
+        <small className="text-muted">
+         Hardware Store
+        </small>
+    </p>
+
+    <p className="ms-4 mb-1">
+       252 wray avenue private Bag 968
+    </p>
                             </div>
                             
                             <div className="mb-4">
                                 <h5><FaWhatsapp className="text-success me-2" /> WhatsApp</h5>
-                                <p className="ms-4">+123 456 7890</p>
+                                <p className="ms-4">+263 787886092</p>
                                 <Button 
                                     variant="success" 
-                                    href="https://wa.me/1234567890"
+                                    href="https://wa.me/+263 787886092"
                                     target="_blank"
                                 >
                                     <FaWhatsapp className="me-2" />
@@ -52,16 +74,18 @@ const Contact = () => {
                         <Card.Body>
                             <h2 className="mb-4">Our Location</h2>
                             <div style={{ width: '100%', height: '400px' }}>
-                                <iframe
-                                    title="Farm Location"
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.846296276516!2d36.8171844!3d-1.2832844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d2b7f1b3b5%3A0x3c9b9b9b9b9b9b9b!2sNairobi!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske"
-                                    width="100%"
-                                    height="100%"
-                                    style={{ border: 0 }}
-                                    allowFullScreen=""
-                                    loading="lazy"
-                                ></iframe>
-                            </div>
+    <iframe
+        title="Town Centre Hardware - Bindura"
+        src="https://www.google.com/maps?q=Town+Centre+Hardware+Bindura+Zimbabwe&output=embed"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+</div>
+
                         </Card.Body>
                     </Card>
                 </Col>

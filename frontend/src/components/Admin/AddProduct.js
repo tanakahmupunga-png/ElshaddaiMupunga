@@ -109,7 +109,7 @@ const AddProduct = ({ onProductAdded }) => {
                     </Form.Group>
 
                     <Form.Group className="mb-3">
-                        <Form.Label>Price (Dollars) *</Form.Label>
+                        <Form.Label>Price Dollars ($) *</Form.Label>
                         <Form.Control
                             type="number"
                             step="0.01"
